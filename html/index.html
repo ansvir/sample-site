@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../css/canvas.css"/>
+<link rel="stylesheet" href="../css/header.css"/>
+<link rel="stylesheet" href="../css/gallery.css"/>
+<body>
+    <div class="header">
+        <h1>World-wide famous dogs!</h1>
+    </div>
+    <div class="gallery">
+        <img src="../images/alfred.jpg">
+        <img src="../images/camper.jpeg">
+        <img src="../images/garfield.jpg">
+        <img src="../images/dony.jpeg">
+        <img src="../images/mula.jpeg">
+        <img src="../images/momba.jpg">
+    </div>
+    <script>[...document.getElementsByTagName("img")].forEach(i => i.addEventListener("click", function() {
+  alert(i.src.substring(i.src.lastIndexOf("/") + 1, i.src.lastIndexOf(".")).toUpperCase() + "!")
+}));</script>
+</body>
